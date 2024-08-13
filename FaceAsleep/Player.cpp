@@ -273,7 +273,7 @@ void Player::killbullets(vector<RectangleShape> shapes) {
 
 		if (vidasBounds.intersects(playerBounds)) {
 			this->vidas.erase(vidas.begin() + j);
-			if (this->Vida + 20 > 100) {
+			if (this->Vida + 20 > 100){
 				this->Vida = 100;
 			}
 			else { this->Vida += 20; }
@@ -288,7 +288,7 @@ void Player::killbullets(vector<RectangleShape> shapes) {
 
 		if (ammosBounds.intersects(playerBounds)) {
 			this->ammos.erase(ammos.begin() + j);
-			if (this->ammo + 20 > 50) {
+			if (this->ammo + ((rand() % 29) + 1) > 50) {
 				this->ammo = 50;
 			}
 			else { this->ammo += 20; }
