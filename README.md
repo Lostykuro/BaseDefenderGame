@@ -74,7 +74,7 @@
   bala colidiu com o jogador e, em caso positivo, remove a bala e retorna um valor de dano.
 
 
-GameEnder:
+**GameEnder:**
   A classe GameEnder controla a exibição do estado de fim de jogo, seja por derrota ou por limite de tempo. O método initshape configura um ponto central na tela para posicionar 
   a mensagem de fim de jogo. lifetracker verifica se a vida do jogador (p) ou da base (b) chegaram a zero, ou se o tempo de jogo (timer) excedeu 160 segundos. Se qualquer condição
   for atendida, carrega e posiciona uma imagem de "Game Over" no centro da tela e retorna true, indicando que o jogo deve ser pausado. update ajusta a posição da imagem de 
@@ -102,12 +102,16 @@ Baixe a pasta contendo o código-fonte do jogo, incluindo os arquivos .cpp, os c
 Navegue até a pasta onde os arquivos do jogo estão localizados. Certifique-se de que a SFML está instalada no diretório padrão e, em seguida, execute os seguintes comandos no terminal:
 
 
-**Compile os arquivos .cpp em objetos .o: **
+**Compile os arquivos .cpp em objetos .o:**
+
+
 ```bash
 g++ -c atirador.cpp Base.cpp EnemySpawner.cpp Game.cpp GameEnder.cpp Main.cpp Player.cpp
 ```
 
-**Linke os arquivos objetos e crie o executável: **
+**Linke os arquivos objetos e crie o executável:**
+
+
 ```bash
 g++ -o game_project atirador.o Base.o EnemySpawner.o Game.o GameEnder.o Main.o Player.o -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
 ```
