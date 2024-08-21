@@ -39,34 +39,34 @@
 
 ## ► Informações Gerais das Classes:
 
-Game:
+**Game:**
   A classe Game gerencia o loop principal do jogo, incluindo a inicialização da janela, eventos, atualização do estado do jogo e renderização dos elementos na tela. 
   Os métodos incluem initVariables e initWindow para configurar variáveis e a janela do jogo; pollEvents para lidar com entradas do usuário, como teclas e eventos de janela;
   update para atualizar o estado do jogo e seus objetos (jogador, inimigos, base, etc.); e render para desenhar todos os elementos visuais na tela, como o jogador, inimigos
   base e o cronômetro do jogo.
 
 
-Player:
+**Player:**
   A classe Player define o comportamento do jogador no jogo, com métodos para movimentação, colisão e gerenciamento de recursos, como vida e munição.
   Ela possui métodos que atualizam a posição do jogador com base em entradas do teclado e mouse, gerenciam tiros e colisões com objetos e inimigos
   além de renderizar a sprite do jogador e indicadores visuais de vida e munição na tela.
 
 
-Base:
+**Base:**
   A classe Base gerencia a base do jogo, responsável por sua posição, aparência e condição. O método initShape configura a forma e aparência da base, posicionando-a 
   no centro da tela e aplicando uma textura. liferegen permite a regeneração da vida da base a cada dois segundos, enquanto update aplica essa regeneração e ajusta
   a cor da barra de vida conforme a saúde diminui. render desenha a base, sua textura e a barra de vida na tela. receivedamage diminui a vida da base quando atingida,
   os métodos getshape e getvida retornam a forma e o valor atual da vida da base, respectivamente.
 
 
-EnemySpawnner:
+**EnemySpawnner:**
   A classe EnemySpawner é responsável pela criação e manipulação dos inimigos no jogo. O método Enemy_creator gera novos inimigos em posições aleatórias e ajusta 
   o tempo de criação com base no progresso do jogo. set_mira atualiza a posição alvo dos inimigos. update assegura que os "atiradores" estejam sincronizados com 
   os inimigos, enquanto render move os inimigos em direção ao jogador e desenha na tela. setgamerunoff interrompe a criação de inimigos. killenemy remove os inimigos 
   quando atingidos por balas, e damaged_per_bullet verifica se houve colisão de balas com o jogador ou base, retornando dano. getenemies retorna uma lista dos inimigos ativos.
 
 
-atirador:
+**atirador:**
   A classe atirador é responsável por controlar os disparos dos inimigos. O método initshape define o formato inicial do atirador. O construtor atirador posiciona o atirador
   com base na posição do inimigo, enquanto o destrutor ~atirador cuida da limpeza dos recursos. O método update está preparado para futuras atualizações do atirador, enquanto
   render desenha as balas na tela e atualiza suas posições. Os métodos get_bullets e get_angles retornam as balas e ângulos dos disparos. O método set_position sincroniza a 
@@ -83,36 +83,36 @@ GameEnder:
 
 
 ## ►Como Compilar um Jogo Usando SFML no Linux
-Instale a SFML:
+**Instale a SFML:**
 
 Abra o terminal e instale a biblioteca SFML com o comando: 
 ```bash
 sudo apt install libsfml-dev
 ```
 
-Baixe os Arquivos do Jogo:
+**Baixe os Arquivos do Jogo:**
 
 
 Baixe a pasta contendo o código-fonte do jogo, incluindo os arquivos .cpp, os cabeçalhos .h, e as pastas com imagens, áudio e fontes.
 
 
-Compile o Jogo:
+**Compile o Jogo:**
 
 
 Navegue até a pasta onde os arquivos do jogo estão localizados. Certifique-se de que a SFML está instalada no diretório padrão e, em seguida, execute os seguintes comandos no terminal:
 
 
-Compile os arquivos .cpp em objetos .o: 
+**Compile os arquivos .cpp em objetos .o: **
 ```bash
 g++ -c atirador.cpp Base.cpp EnemySpawner.cpp Game.cpp GameEnder.cpp Main.cpp Player.cpp
 ```
 
-Linke os arquivos objetos e crie o executável: 
+**Linke os arquivos objetos e crie o executável: **
 ```bash
 g++ -o game_project atirador.o Base.o EnemySpawner.o Game.o GameEnder.o Main.o Player.o -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
 ```
 
-Execute o Jogo:
+**Execute o Jogo:**
 
 
 Após a compilação, para rodar o jogo, digite o seguinte comando no terminal:
