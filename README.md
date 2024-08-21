@@ -6,7 +6,7 @@
 ```
 ► Componentes do Grupo : João Maria de Araujo Nogueira
 
-##► Features implementadas:
+## ► Features implementadas:
  [x] O heroi tem 100 pontos de vida.
  
  [x] O herói tem uma quantidade limitada de projéteis.
@@ -31,13 +31,13 @@
  
  [x] O jogo deve finalizar se a base conseguir ser protegida por um determinado período de tempo ou se ela for destruída.
 
-###► Features EXTRAS implementadas:
+**► Features EXTRAS implementadas:**
 
  [x] O jogo é pausado junto ao timer quando a tecla “P” é apertada
 
 
 
-##► Informações Gerais das Classes:
+## ► Informações Gerais das Classes:
 
 Game:
   A classe Game gerencia o loop principal do jogo, incluindo a inicialização da janela, eventos, atualização do estado do jogo e renderização dos elementos na tela. 
@@ -82,11 +82,13 @@ GameEnder:
 
 
 
-##►Como Compilar um Jogo Usando SFML no Linux
+## ►Como Compilar um Jogo Usando SFML no Linux
 Instale a SFML:
 
-Abra o terminal e instale a biblioteca SFML com o comando: sudo apt install libsfml-dev
-
+Abra o terminal e instale a biblioteca SFML com o comando: 
+```bash
+sudo apt install libsfml-dev
+```
 
 Baixe os Arquivos do Jogo:
 
