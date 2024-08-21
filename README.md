@@ -3,7 +3,7 @@
 (  )(  ( \(  __)(  _ \ / _\    / __)(  _ \(  __)(  __)(  ( \
  )( /    / ) _)  )   //    \  ( (_ \ )   / ) _)  ) _) /    /
 (__)\_)__)(__)  (__\_)\_/\_/   \___/(__\_)(____)(____)\_)__)
-
+```
 ► Componentes do Grupo : João Maria de Araujo Nogueira
 
 ► Features implementadas:
@@ -100,14 +100,21 @@ Compile o Jogo:
 Navegue até a pasta onde os arquivos do jogo estão localizados. Certifique-se de que a SFML está instalada no diretório padrão e, em seguida, execute os seguintes comandos no terminal:
 
 
-Compile os arquivos .cpp em objetos .o: g++ -c atirador.cpp Base.cpp EnemySpawner.cpp Game.cpp GameEnder.cpp Main.cpp Player.cpp
+Compile os arquivos .cpp em objetos .o: 
+```bash
+g++ -c atirador.cpp Base.cpp EnemySpawner.cpp Game.cpp GameEnder.cpp Main.cpp Player.cpp
+```
 
-
-Linke os arquivos objetos e crie o executável: g++ -o game_project atirador.o Base.o EnemySpawner.o Game.o GameEnder.o Main.o Player.o -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
-
+Linke os arquivos objetos e crie o executável: 
+```bash
+g++ -o game_project atirador.o Base.o EnemySpawner.o Game.o GameEnder.o Main.o Player.o -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
+```
 
 Execute o Jogo:
 
 
-Após a compilação, para rodar o jogo, digite o seguinte comando no terminal: ./game_project
+Após a compilação, para rodar o jogo, digite o seguinte comando no terminal:
+```bash
+./game_project
+```
 
