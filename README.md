@@ -4,6 +4,7 @@
  )( /    / ) _)  )   //    \  ( (_ \ )   / ) _)  ) _) /    /
 (__)\_)__)(__)  (__\_)\_/\_/   \___/(__\_)(____)(____)\_)__)
 
+► Componentes do Grupo : João Maria de Araujo Nogueira
 
 ► Features implementadas:
  [x] O heroi tem 100 pontos de vida.
