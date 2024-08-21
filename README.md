@@ -6,7 +6,7 @@
 ```
 ► Componentes do Grupo : João Maria de Araujo Nogueira
 
-► Features implementadas:
+# ► Features implementadas:
  [x] O heroi tem 100 pontos de vida.
  
  [x] O herói tem uma quantidade limitada de projéteis.
